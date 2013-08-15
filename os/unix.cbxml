@@ -1,0 +1,114 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE database SYSTEM "file:///System/Library/DTDs/CoreData.dtd">
+
+<database>
+    <databaseInfo>
+        <version>134481920</version>
+        <UUID>93E6B8C1-6F0F-4243-96DA-0D5BD0738764</UUID>
+        <nextObjectID>110</nextObjectID>
+        <metadata>
+            <plist version="1.0">
+                <dict>
+                    <key>NSPersistenceFrameworkVersion</key>
+                    <integer>407</integer>
+                    <key>NSStoreModelVersionHashes</key>
+                    <dict>
+                        <key>Asset</key>
+                        <data>
+		tyQotsO8NDvt1XE0n7ISUiSHKjen9suD2Y4EXGRd56I=
+		</data>
+                        <key>Folder</key>
+                        <data>
+		6AflOHiDpCFdpGAdI0h5t/eykc0B/9DCQLuGcURzmWI=
+		</data>
+                        <key>List</key>
+                        <data>
+		f4nmFsXfFk8V4CSJFMVZeV0UVaEd8d49csHd+yfBOO4=
+		</data>
+                        <key>Search</key>
+                        <data>
+		/Di3N1cVqPFGCxVmoUJ3wQ51ctkJsx+xJfuxAdNqToc=
+		</data>
+                        <key>Snippet</key>
+                        <data>
+		4X/rsY/TA70Pj9wVlkKWOTV5xo34weRxc8LfSD+NVD8=
+		</data>
+                        <key>Tag</key>
+                        <data>
+		tynbpfPyYUACFlBsnCbwUvDeu/vffT4ux8pptcOescY=
+		</data>
+                    </dict>
+                    <key>NSStoreModelVersionHashesVersion</key>
+                    <integer>3</integer>
+                    <key>NSStoreModelVersionIdentifiers</key>
+                    <array>
+                        <string></string>
+                    </array>
+                </dict>
+            </plist>
+        </metadata>
+    </databaseInfo>
+    <object type="ASSET" id="z102">
+        <attribute name="sort" type="int32">-1</attribute>
+        <attribute name="path" type="string">Asset.txt</attribute>
+        <attribute name="content" type="binary">aCBmb3IgbGVmdCwgbCBmb3IgcmlnaHQKaiBmb3IgZG93biwgayB1cCBmb3IgdXAKMCBmb3Igc3Rh
+cnQgb2YgbGluZSwgJCBmb3IgZW5kIG9mIGxpbmU=
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z103"></relationship>
+    </object>
+    <object type="SNIPPET" id="z103">
+        <attribute name="name" type="string">Moving the cursor</attribute>
+        <attribute name="modified" type="date">398268279.52911102771759033203</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z102"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z105"></relationship>
+    </object>
+    <object type="SEARCH" id="z104">
+        <attribute name="sort" type="int16">-1</attribute>
+        <attribute name="name" type="string">All Snippets</attribute>
+        <attribute name="expanded" type="bool">0</attribute>
+        <relationship name="parent" type="1/1" destination="FOLDER"></relationship>
+        <relationship name="children" type="0/0" destination="FOLDER"></relationship>
+    </object>
+    <object type="TAG" id="z105">
+        <attribute name="name" type="string">vi</attribute>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z103"></relationship>
+    </object>
+    <object type="ASSET" id="z106">
+        <attribute name="sort" type="int32">-1</attribute>
+        <attribute name="path" type="string">Asset.sh</attribute>
+        <attribute name="content" type="binary">QWxsIGNvbW1hbmRzIGhhdmUgdHdvIG91dHB1dHMgLSBzdGRvdXQgYW5kIHN0ZGVyci4gVGhlc2Ug
+Ym90aCBkZWZhdWx0IHRvIHNjcmVlbiwgYnV0IGNhbiBiZSBkaXJlY3RlZCB0byBmaWxlcyBvciB0cmFzaC4KCgpscyAuIG5vbkV4aXN0ZW50Rm9sZGVyClByaW50cyBhIG1peHR1cmUgb2YgZ2VudWluZSBsaXN0aW5ncyBhbmQgZXJyb3JzIHRvIHRoZSBzY3JlZW4KCmxzIC4gbm9uRXhpc3RlbnRGb2xkZXIgMj4gZXJyLnR4dApQcmludHMgdGhlIGxpc3RpbmcgdG8gc2NyZWVuIGFuZCB0aGUgZXJyb3JzIHRvIGVyci50eHQKCmxzIC4gbm9uRXhpc3RlbnREaXJlY3RvcnkgPiBsaXN0aW5nLnR4dApQcmludHMgdGhlIGVycm9ycyB0byBzY3JlZW4gYW5kIHRoZSBsaXN0aW5ncyB0byBsaXN0aW5nLnR4dAoKbHMgLiBub25FeGlzdGVudERpcmVjdG9yeSA+IC9kZXYvbnVsbApQcmludHMgdGhlIGVycm9ycyB0byBzY3JlZW4gYW5kIHRoZSBsaXN0aW5ncyB0byBhIHRocm93YXdheSBidWNrZXQKCmxzIC4gbm9uRXhpc3RlbnREaXJlY3RvcnkgPiAvZGV2L251bGwgMj4mMQpTZW5kcyB0aGUgZXJyb3JzIGFuZCB0aGUgbGlzdGluZ3MgdG8gdGhlIHRocm93YXdheSBidWNrZXQgLSBub3RoaW5nIHRvIHNjcmVlbi4KTm90ZSB0aGF0IHlvdSBoYXZlIHRvIGRpcmVjdCB0aGUgc3Rkb3V0IGJlZm9yZSB5b3UgY291cGxlIHRoZSBzdGRlcnIgdG8gaXQ=
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z108"></relationship>
+    </object>
+    <object type="TAG" id="z107">
+        <attribute name="name" type="string">bash</attribute>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z110 z108"></relationship>
+    </object>
+    <object type="SNIPPET" id="z108">
+        <attribute name="name" type="string">Redirecting outputs</attribute>
+        <attribute name="modified" type="date">398268481.03676599264144897461</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z106"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z107"></relationship>
+    </object>
+    <object type="ASSET" id="z109">
+        <attribute name="sort" type="int32">-1</attribute>
+        <attribute name="path" type="string">Asset.txt</attribute>
+        <attribute name="content" type="binary">bWtkaXIgbXlmb2xkZXIKTWFrZXMgYSBzaW5nbGUgZm9sZGVyCgpta2RpciAtcCBhL2IvYwpNYWtl
+cyBhIGNoYWluIG9mIGRpcmVjdG9yaWVzCgpta2RpciAtcCBwcm9qZWN0L3tkb2Mve2h0bWwscGRmLHRleHR9LGxpYi9iaW4sZGVtby9zdGF0L2F9Ck1ha2VzIGEgbHV2dmVybHkgcHJvamVjdCBkaXJlY3Rvcnkgc3RydWN0dXJl
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z110"></relationship>
+    </object>
+    <object type="SNIPPET" id="z110">
+        <attribute name="name" type="string">Creating folders</attribute>
+        <attribute name="modified" type="date">398268654.40161997079849243164</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z109"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z107"></relationship>
+    </object>
+</database>
