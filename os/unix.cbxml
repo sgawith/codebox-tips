@@ -5,7 +5,7 @@
     <databaseInfo>
         <version>134481920</version>
         <UUID>93E6B8C1-6F0F-4243-96DA-0D5BD0738764</UUID>
-        <nextObjectID>147</nextObjectID>
+        <nextObjectID>156</nextObjectID>
         <metadata>
             <plist version="1.0">
                 <dict>
@@ -85,7 +85,7 @@ Ym90aCBkZWZhdWx0IHRvIHNjcmVlbiwgYnV0IGNhbiBiZSBkaXJlY3RlZCB0byBmaWxlcyBvciB0cmFz
     </object>
     <object type="TAG" id="z107">
         <attribute name="name" type="string">bash</attribute>
-        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z112 z137 z145 z135 z146 z110 z141 z138 z143 z108"></relationship>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z141 z112 z138 z151 z155 z143 z137 z149 z108 z145 z146 z135 z110"></relationship>
     </object>
     <object type="SNIPPET" id="z108">
         <attribute name="name" type="string">Redirecting outputs</attribute>
@@ -136,7 +136,8 @@ Z3JhbnQ9ImNkIH4vdmFncmFudC1ib3hlcy9hY3RpdmUvbXlib3giCgpTZXQgYSBzaW5nbGUtd29yZCBh
         <relationship name="tags" type="0/0" destination="TAG" idrefs="z115"></relationship>
     </object>
     <object type="ASSET" id="z114">
-        <attribute name="content" type="binary">aiwgayAtIHVwICYgZG93biBvbmUgbGluZQp3LCB6IC0gdXAgJiBkb3duIG9uZSBzY3JlZW4=
+        <attribute name="content" type="binary">aiwgayAtIHVwICYgZG93biBvbmUgbGluZQp3LCB6IC0gdXAgJiBkb3duIG9uZSBzY3JlZW4KClNo
+aWZ0LUcgLSBlbmQgb2YgZmlsZQk=
 </attribute>
         <attribute name="sort" type="int32">-1</attribute>
         <attribute name="path" type="string">Asset.txt</attribute>
@@ -396,5 +397,69 @@ ZXF1ZXN0ZWQgY29tbWFuZA==
 IGphdmEKTGlzdCBhbGwgcHJvY2Vzc2VzIHdpdGggamF2YSBpbiB0aGUgcHJvY2VzcyBkZXNjcmlwdGlvbg==
 </attribute>
         <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z146"></relationship>
+    </object>
+    <object type="ASSET" id="z148">
+        <attribute name="sort" type="int32">-1</attribute>
+        <attribute name="path" type="string">Asset.txt</attribute>
+        <attribute name="content" type="binary">ZGlmZiAtcnEgZm9sZGVyMSBmb2xkZXIy
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z149"></relationship>
+    </object>
+    <object type="SNIPPET" id="z149">
+        <attribute name="name" type="string">Comparing the contents of two folders</attribute>
+        <attribute name="modified" type="date">401721466.71535402536392211914</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z148"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z107"></relationship>
+    </object>
+    <object type="ASSET" id="z150">
+        <attribute name="sort" type="int32">-1</attribute>
+        <attribute name="path" type="string">Asset.txt</attribute>
+        <attribute name="content" type="binary">c3BsaXQgLWwgNzUwMDAgR2VvTGl0ZUNpdHktTG9jYXRpb24uY3N2
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z151"></relationship>
+    </object>
+    <object type="SNIPPET" id="z151">
+        <attribute name="name" type="string">Splitting a file by line number</attribute>
+        <attribute name="modified" type="date">401721500.17884701490402221680</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z150"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z107"></relationship>
+    </object>
+    <object type="SNIPPET" id="z152">
+        <attribute name="name" type="string">Extracting matching lines from multiple files</attribute>
+        <attribute name="modified" type="date">401721656.31798702478408813477</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z154"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z153"></relationship>
+    </object>
+    <object type="TAG" id="z153">
+        <attribute name="name" type="string">grep</attribute>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z152"></relationship>
+    </object>
+    <object type="ASSET" id="z154">
+        <attribute name="sort" type="int32">-1</attribute>
+        <attribute name="path" type="string">Asset.txt</attribute>
+        <attribute name="content" type="binary">Z3JlcCAtaSAnc2VjcmV0cGF0aCcgYWNjZXNzX2xvZy4qID4gaGl0X3N1bW1hcnkudHh0CgpDb3Bp
+ZXMgYWxsIGxpbmVzIHdoaWNoIGNvbnRhaW4gdGhlIHN1YnN0cmluZyAnc2VjcmV0cGF0aCcgZnJvbSBmaWxlcyBuYW1lZCBhY2Nlc19sb2cuKiB0byBhIG5ldyBmaWxlIGNhbGxlZCBoaXRfc3VtbWFyeS50eHQ=
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z152"></relationship>
+    </object>
+    <object type="SNIPPET" id="z155">
+        <attribute name="name" type="string">Setting an environment variable</attribute>
+        <attribute name="modified" type="date">401722019.15778297185897827148</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z156"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z107"></relationship>
+    </object>
+    <object type="ASSET" id="z156">
+        <attribute name="sort" type="int32">-1</attribute>
+        <attribute name="path" type="string">Asset.txt</attribute>
+        <attribute name="content" type="binary">Rm9yIGV4YW1wbGUsCgpleHBvcnQgSkFWQV9IT01FPSIvdXNyL2xvY2FsL2pkazEuNi4wXzM4Igo=</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z155"></relationship>
     </object>
 </database>
