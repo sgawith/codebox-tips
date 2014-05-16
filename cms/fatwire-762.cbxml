@@ -1,0 +1,134 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE database SYSTEM "file:///System/Library/DTDs/CoreData.dtd">
+
+<database>
+    <databaseInfo>
+        <version>134481920</version>
+        <UUID>1582CBFD-8440-4BFA-95CB-C2941BB5F924</UUID>
+        <nextObjectID>113</nextObjectID>
+        <metadata>
+            <plist version="1.0">
+                <dict>
+                    <key>NSPersistenceFrameworkVersion</key>
+                    <integer>481</integer>
+                    <key>NSStoreModelVersionHashes</key>
+                    <dict>
+                        <key>Asset</key>
+                        <data>
+		tyQotsO8NDvt1XE0n7ISUiSHKjen9suD2Y4EXGRd56I=
+		</data>
+                        <key>Folder</key>
+                        <data>
+		6AflOHiDpCFdpGAdI0h5t/eykc0B/9DCQLuGcURzmWI=
+		</data>
+                        <key>List</key>
+                        <data>
+		f4nmFsXfFk8V4CSJFMVZeV0UVaEd8d49csHd+yfBOO4=
+		</data>
+                        <key>Search</key>
+                        <data>
+		/Di3N1cVqPFGCxVmoUJ3wQ51ctkJsx+xJfuxAdNqToc=
+		</data>
+                        <key>Snippet</key>
+                        <data>
+		4X/rsY/TA70Pj9wVlkKWOTV5xo34weRxc8LfSD+NVD8=
+		</data>
+                        <key>Tag</key>
+                        <data>
+		tynbpfPyYUACFlBsnCbwUvDeu/vffT4ux8pptcOescY=
+		</data>
+                    </dict>
+                    <key>NSStoreModelVersionHashesVersion</key>
+                    <integer>3</integer>
+                    <key>NSStoreModelVersionIdentifiers</key>
+                    <array>
+                        <string></string>
+                    </array>
+                </dict>
+            </plist>
+        </metadata>
+    </databaseInfo>
+    <object type="SEARCH" id="z102">
+        <attribute name="sort" type="int16">-1</attribute>
+        <attribute name="name" type="string">All Snippets</attribute>
+        <attribute name="expanded" type="bool">0</attribute>
+        <relationship name="parent" type="1/1" destination="FOLDER"></relationship>
+        <relationship name="children" type="0/0" destination="FOLDER"></relationship>
+    </object>
+    <object type="ASSET" id="z103">
+        <attribute name="sort" type="int32">-1</attribute>
+        <attribute name="path" type="string">Asset.txt</attribute>
+        <attribute name="content" type="binary">aHR0cDovL2Fub3RoZXJtaWRkbGV3YXJlLmJsb2dzcG90LmNvLnVrLzIwMTMvMTEvc3RhcnRpbmct
+b3JhY2xlLXdlYmNlbnRlci1zaXRlcy1qc2suaHRtbAoKWW91IG5lZWQgYSBKYXZhIEpESyAoSmF2YSA3IHU1NSB3b3JrcyBmaW5lKQ==
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z104"></relationship>
+    </object>
+    <object type="SNIPPET" id="z104">
+        <attribute name="name" type="string">Running JSK on OSX</attribute>
+        <attribute name="modified" type="date">421238922.00649100542068481445</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z103"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z105 z106"></relationship>
+    </object>
+    <object type="TAG" id="z105">
+        <attribute name="name" type="string">OSX</attribute>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z113 z104"></relationship>
+    </object>
+    <object type="TAG" id="z106">
+        <attribute name="name" type="string">JSK</attribute>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z104"></relationship>
+    </object>
+    <object type="TAG" id="z107">
+        <attribute name="name" type="string">CSDT</attribute>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z113 z111 z109"></relationship>
+    </object>
+    <object type="ASSET" id="z108">
+        <attribute name="sort" type="int32">-1</attribute>
+        <attribute name="path" type="string">Asset.txt</attribute>
+        <attribute name="content" type="binary">amF2YSBjb20uZmF0d2lyZS5jc2R0LmNsaWVudC5tYWluLkNTRFQgaHR0cDovL2xvY2FsaG9zdDo4
+MDgwL2NzL0NvbnRlbnRTZXJ2ZXIgdXNlcm5hbWU9ZndhZG1pbiBwYXNzd29yZD14Y2VsYWRtaW4gY21kPWltcG9ydCByZXNvdXJjZXM9VGVtcGxhdGU6MTEyMTMwNDcyNjY3NAoKcmVzb3VyY2VzIGlzIGEgY29tbWEtc2VwYXJhdGVkIGxpc3Qgb2YgZXhhY3QgYXNzZXQgcmVmZXJlbmNlcyAoVHlwZTpJRCkgYW5kIGFzc2V0IHR5cGVzIChUeXBlOiopLgoKU2VlIGNzRGV2ZWxvcGVyVG9vbHNfMS0wXzc2LnBkZiBwNTQgZm9yIG1vcmUgZGV0YWlscy4=
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z109"></relationship>
+    </object>
+    <object type="SNIPPET" id="z109">
+        <attribute name="name" type="string">CSDT import</attribute>
+        <attribute name="modified" type="date">421246596.67544400691986083984</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z108"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z107"></relationship>
+    </object>
+    <object type="ASSET" id="z110">
+        <attribute name="sort" type="int32">-1</attribute>
+        <attribute name="path" type="string">Asset.txt</attribute>
+        <attribute name="content" type="binary">amF2YSBjb20uZmF0d2lyZS5jc2R0LmNsaWVudC5tYWluLkNTRFQgaHR0cDovL2xvY2FsaG9zdDo4
+MDgwL2NzL0NvbnRlbnRTZXJ2ZXIgdXNlcm5hbWU9ZndhZG1pbiBwYXNzd29yZD14Y2VsYWRtaW4gY21kPWxpc3RkcyByZXNvdXJjZXM9VGVtcGxhdGU6KgoKcmVzb3VyY2VzIGlzIGEgY29tbWEtc2VwYXJhdGVkIGxpc3Qgb2YgZXhhY3QgYXNzZXQgcmVmZXJlbmNlcyAoVHlwZTpJRCkgYW5kIGFzc2V0IHR5cGVzIChUeXBlOiopLgoKU2VlIGNzRGV2ZWxvcGVyVG9vbHNfMS0wXzc2LnBkZiBwNTQgZm9yIG1vcmUgZGV0YWlscy4=
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z111"></relationship>
+    </object>
+    <object type="SNIPPET" id="z111">
+        <attribute name="name" type="string">CSDT list content of local folder</attribute>
+        <attribute name="modified" type="date">421253632.01489102840423583984</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z110"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z107"></relationship>
+    </object>
+    <object type="ASSET" id="z112">
+        <attribute name="sort" type="int32">-1</attribute>
+        <attribute name="path" type="string">Asset.txt</attribute>
+        <attribute name="content" type="binary">UHJvYmxlbTogQ1NEVCBkb2Vzbid0IGltcG9ydCBhbnkgY2hhbmdlcwoKU29sdXRpb246CgpodHRw
+Oi8vamF2YWplZWRldmVsb3BtZW50LmJsb2dzcG90LmNvLnVrLzIwMTMvMTEveHN0cmVhbS1jb210aG91Z2h0d29ya3N4c3RyZWFtY29udmVydGVyLmh0bWwKCklmIHlvdSBnZXQgYW55IGNvbS50aG91Z2h0d29ya3MueHN0cmVhbS5jb252ZXJ0ZXJzLnJlZmxlY3Rpb24uT2JqZWN0QWNjZXNzRXhjZXB0aW9uIGZyb20geW91ciBqYXZhIHByb2dyYW1zLCBpdCBtYXkgYmUgZHVlIHRvIDogYW4gdXBncmFkZWQgb2YgamF2YSB2ZXJzaW9uIHRvIDcuCkFzIG1lbnRpb25lZCBpbiB4c3RyZWFtIHNpdGU6IAoKICAgIEphdmEgNyBpcyBkZXRlY3RlZCBhbmQgc3VwcG9ydGVkIHNpbmNlIHhzdHJlYW0gMS40CgpTb2x1dGlvbjogVXBncmFkZSB5b3VyIHhzdHJlYW0gdG8gMS40CgpXaXRoIG1hdmVuOiAKICAgICAgICAgIDxkZXBlbmRlbmN5PgogICAgICAgICAgICAgICAgPGFydGlmYWN0SWQ+eHN0cmVhbTwvYXJ0aWZhY3RJZD4KICAgICAgPGdyb3VwSWQ+Y29tLnRob3VnaHR3b3Jrcy54c3RyZWFtPC9ncm91cElkPgogICAgICA8dmVyc2lvbj4xLjQ8L3ZlcnNpb24+CiAgICAgICAgICA8L2RlcGVuZGVuY3k+ICAKCkxhdHN0IGJpbmFyeSBmcm9tOgoKaHR0cDovL3hzdHJlYW0uY29kZWhhdXMub3JnL2Rvd25sb2FkLmh0bWwKCkRvZXNuJ3Qgd29yayEKCnYxLjQuMiBmcm9tIHRoZSAxMWcgMS44IEpTSyB3b3JrcywgdGhvdWdoIQoK
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z113"></relationship>
+    </object>
+    <object type="SNIPPET" id="z113">
+        <attribute name="name" type="string">CSDT fails on OSX java 7</attribute>
+        <attribute name="modified" type="date">421255875.51127201318740844727</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z112"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z105 z107"></relationship>
+    </object>
+</database>

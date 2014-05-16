@@ -5,12 +5,12 @@
     <databaseInfo>
         <version>134481920</version>
         <UUID>93E6B8C1-6F0F-4243-96DA-0D5BD0738764</UUID>
-        <nextObjectID>156</nextObjectID>
+        <nextObjectID>158</nextObjectID>
         <metadata>
             <plist version="1.0">
                 <dict>
                     <key>NSPersistenceFrameworkVersion</key>
-                    <integer>407</integer>
+                    <integer>481</integer>
                     <key>NSStoreModelVersionHashes</key>
                     <dict>
                         <key>Asset</key>
@@ -85,7 +85,7 @@ Ym90aCBkZWZhdWx0IHRvIHNjcmVlbiwgYnV0IGNhbiBiZSBkaXJlY3RlZCB0byBmaWxlcyBvciB0cmFz
     </object>
     <object type="TAG" id="z107">
         <attribute name="name" type="string">bash</attribute>
-        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z141 z112 z138 z151 z155 z143 z137 z149 z108 z145 z146 z135 z110"></relationship>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z138 z149 z108 z146 z135 z137 z110 z141 z145 z151 z143 z112 z158 z155"></relationship>
     </object>
     <object type="SNIPPET" id="z108">
         <attribute name="name" type="string">Redirecting outputs</attribute>
@@ -461,5 +461,20 @@ ZXMgYWxsIGxpbmVzIHdoaWNoIGNvbnRhaW4gdGhlIHN1YnN0cmluZyAnc2VjcmV0cGF0aCcgZnJvbSBm
         <attribute name="path" type="string">Asset.txt</attribute>
         <attribute name="content" type="binary">Rm9yIGV4YW1wbGUsCgpleHBvcnQgSkFWQV9IT01FPSIvdXNyL2xvY2FsL2pkazEuNi4wXzM4Igo=</attribute>
         <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z155"></relationship>
+    </object>
+    <object type="ASSET" id="z157">
+        <attribute name="sort" type="int32">-1</attribute>
+        <attribute name="path" type="string">Asset.txt</attribute>
+        <attribute name="content" type="binary">c3VkbyBmaW5kIC9Vc2Vycy9TYW0vIC10eXBlIGYgLW1taW4gLTU=
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z158"></relationship>
+    </object>
+    <object type="SNIPPET" id="z158">
+        <attribute name="name" type="string">Find files modified in the last 5 minutes</attribute>
+        <attribute name="modified" type="date">421256132.03633302450180053711</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z157"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z107"></relationship>
     </object>
 </database>
