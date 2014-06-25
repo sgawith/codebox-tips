@@ -1,0 +1,78 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE database SYSTEM "file:///System/Library/DTDs/CoreData.dtd">
+
+<database>
+    <databaseInfo>
+        <version>134481920</version>
+        <UUID>107B771E-FDD4-4482-9E91-13FB05DFD074</UUID>
+        <nextObjectID>105</nextObjectID>
+        <metadata>
+            <plist version="1.0">
+                <dict>
+                    <key>NSPersistenceFrameworkVersion</key>
+                    <integer>481</integer>
+                    <key>NSStoreModelVersionHashes</key>
+                    <dict>
+                        <key>Asset</key>
+                        <data>
+		tyQotsO8NDvt1XE0n7ISUiSHKjen9suD2Y4EXGRd56I=
+		</data>
+                        <key>Folder</key>
+                        <data>
+		6AflOHiDpCFdpGAdI0h5t/eykc0B/9DCQLuGcURzmWI=
+		</data>
+                        <key>List</key>
+                        <data>
+		f4nmFsXfFk8V4CSJFMVZeV0UVaEd8d49csHd+yfBOO4=
+		</data>
+                        <key>Search</key>
+                        <data>
+		/Di3N1cVqPFGCxVmoUJ3wQ51ctkJsx+xJfuxAdNqToc=
+		</data>
+                        <key>Snippet</key>
+                        <data>
+		4X/rsY/TA70Pj9wVlkKWOTV5xo34weRxc8LfSD+NVD8=
+		</data>
+                        <key>Tag</key>
+                        <data>
+		tynbpfPyYUACFlBsnCbwUvDeu/vffT4ux8pptcOescY=
+		</data>
+                    </dict>
+                    <key>NSStoreModelVersionHashesVersion</key>
+                    <integer>3</integer>
+                    <key>NSStoreModelVersionIdentifiers</key>
+                    <array>
+                        <string></string>
+                    </array>
+                </dict>
+            </plist>
+        </metadata>
+    </databaseInfo>
+    <object type="SNIPPET" id="z102">
+        <attribute name="name" type="string">Changes between commits</attribute>
+        <attribute name="modified" type="date">422465660.28157097101211547852</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z104"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z105"></relationship>
+    </object>
+    <object type="SEARCH" id="z103">
+        <attribute name="sort" type="int16">-1</attribute>
+        <attribute name="name" type="string">All Snippets</attribute>
+        <attribute name="expanded" type="bool">0</attribute>
+        <relationship name="parent" type="1/1" destination="FOLDER"></relationship>
+        <relationship name="children" type="0/0" destination="FOLDER"></relationship>
+    </object>
+    <object type="ASSET" id="z104">
+        <attribute name="sort" type="int32">-1</attribute>
+        <attribute name="path" type="string">Asset.txt</attribute>
+        <attribute name="content" type="binary">QmV0d2VlbiBzcGVjaWZpYyBjb21taXRzOgoKZ2l0IGRpZmYgLS1uYW1lLW9ubHkgU0hBMSBTSEEy
+CgoKQmV0d2VlbiBjb21taXRzIHNpbmNlIGhlYWQ6CgpnaXQgZGlmZiAtLW5hbWUtb25seSBIRUFEfjEwIEhFQUR+NQoKCkJldHdlZW4gY29tbWl0IGFuZCBoZWFkOgoKZ2l0IGRpZmYgLS1uYW1lLW9ubHkgU0hBMSBIRUFECgoKCmh0dHA6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvMTU1MjM0MC9naXQtc2hvdy1hbGwtY2hhbmdlZC1maWxlcy1iZXR3ZWVuLXR3by1jb21taXRz
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z102"></relationship>
+    </object>
+    <object type="TAG" id="z105">
+        <attribute name="name" type="string">changesets</attribute>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z102"></relationship>
+    </object>
+</database>
