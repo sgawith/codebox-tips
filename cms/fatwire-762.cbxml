@@ -5,7 +5,7 @@
     <databaseInfo>
         <version>134481920</version>
         <UUID>1582CBFD-8440-4BFA-95CB-C2941BB5F924</UUID>
-        <nextObjectID>113</nextObjectID>
+        <nextObjectID>116</nextObjectID>
         <metadata>
             <plist version="1.0">
                 <dict>
@@ -81,7 +81,7 @@ b3JhY2xlLXdlYmNlbnRlci1zaXRlcy1qc2suaHRtbAoKWW91IG5lZWQgYSBKYXZhIEpESyAoSmF2YSA3
     </object>
     <object type="TAG" id="z107">
         <attribute name="name" type="string">CSDT</attribute>
-        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z113 z111 z109"></relationship>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z109 z111 z113"></relationship>
     </object>
     <object type="ASSET" id="z108">
         <attribute name="sort" type="int32">-1</attribute>
@@ -130,5 +130,25 @@ Oi8vamF2YWplZWRldmVsb3BtZW50LmJsb2dzcG90LmNvLnVrLzIwMTMvMTEveHN0cmVhbS1jb210aG91
         <relationship name="list" type="1/1" destination="LIST"></relationship>
         <relationship name="assets" type="0/0" destination="ASSET" idrefs="z112"></relationship>
         <relationship name="tags" type="0/0" destination="TAG" idrefs="z105 z107"></relationship>
+    </object>
+    <object type="TAG" id="z114">
+        <attribute name="name" type="string">SQL</attribute>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z116"></relationship>
+    </object>
+    <object type="ASSET" id="z115">
+        <attribute name="sort" type="int32">-1</attribute>
+        <attribute name="path" type="string">Asset.txt</attribute>
+        <attribute name="content" type="binary">UGFyZW50L0NoaWxkIGlzbid0IGV4cG9zZWQgdGhyb3VnaCB0aGUgdGFnbGlicyBvciB0aGUgQVBJ
+LCBhbmQgaXNuJ3QgdHJhY2tlZCBpbiB0aGUgbWFpbiBBc3NldFJlbGF0aW9uVHJlZS4KClRoaXMgcXVlcnkgZ2l2ZXMgYSBzaW1wbGUgbGlzdCBvZiBjaGlsZHJlbi4KClNFTEVDVCBDaGlsZElEIGFzIGFzc2V0aWQsIENoaWxkVHlwZSBhcyBhc3NldHR5cGUgRlJPTSBNUFNGb0lfUF9Hcm91cCBXSEVSRSBQYXJlbnRJRD0xNDA0MzcyNzY2ODA3IEFORCBQcmltYXJ5Q291bnQ9MQ==
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z116"></relationship>
+    </object>
+    <object type="SNIPPET" id="z116">
+        <attribute name="name" type="string">Get child assets from Parent relationship</attribute>
+        <attribute name="modified" type="date">426695933.21365898847579956055</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z115"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z114"></relationship>
     </object>
 </database>
