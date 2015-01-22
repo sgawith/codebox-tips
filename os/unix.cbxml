@@ -5,12 +5,12 @@
     <databaseInfo>
         <version>134481920</version>
         <UUID>93E6B8C1-6F0F-4243-96DA-0D5BD0738764</UUID>
-        <nextObjectID>158</nextObjectID>
+        <nextObjectID>162</nextObjectID>
         <metadata>
             <plist version="1.0">
                 <dict>
                     <key>NSPersistenceFrameworkVersion</key>
-                    <integer>481</integer>
+                    <integer>526</integer>
                     <key>NSStoreModelVersionHashes</key>
                     <dict>
                         <key>Asset</key>
@@ -85,7 +85,7 @@ Ym90aCBkZWZhdWx0IHRvIHNjcmVlbiwgYnV0IGNhbiBiZSBkaXJlY3RlZCB0byBmaWxlcyBvciB0cmFz
     </object>
     <object type="TAG" id="z107">
         <attribute name="name" type="string">bash</attribute>
-        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z138 z149 z108 z146 z135 z137 z110 z141 z145 z151 z143 z112 z158 z155"></relationship>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z145 z151 z160 z155 z141 z110 z149 z112 z138 z143 z146 z135 z137 z108 z158 z162"></relationship>
     </object>
     <object type="SNIPPET" id="z108">
         <attribute name="name" type="string">Redirecting outputs</attribute>
@@ -475,6 +475,36 @@ ZXMgYWxsIGxpbmVzIHdoaWNoIGNvbnRhaW4gdGhlIHN1YnN0cmluZyAnc2VjcmV0cGF0aCcgZnJvbSBm
         <attribute name="locked" type="bool">0</attribute>
         <relationship name="list" type="1/1" destination="LIST"></relationship>
         <relationship name="assets" type="0/0" destination="ASSET" idrefs="z157"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z107"></relationship>
+    </object>
+    <object type="ASSET" id="z159">
+        <attribute name="sort" type="int32">-1</attribute>
+        <attribute name="path" type="string">Asset.txt</attribute>
+        <attribute name="content" type="binary">ZmluZCAuIC1uYW1lICcqLkRTX1N0b3JlJyAtdHlwZSBmIC1kZWxldGU=
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z160"></relationship>
+    </object>
+    <object type="SNIPPET" id="z160">
+        <attribute name="name" type="string">Remove .DS_Store files</attribute>
+        <attribute name="modified" type="date">440424113.28127497434616088867</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z159"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z107"></relationship>
+    </object>
+    <object type="ASSET" id="z161">
+        <attribute name="sort" type="int32">-1</attribute>
+        <attribute name="path" type="string">Asset.txt</attribute>
+        <attribute name="content" type="binary">ZGl0dG8gLVYgfi9EZXNrdG9wL1Rlc3Qgfi9Eb3dubG9hZHMvVGVzdA==
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z162"></relationship>
+    </object>
+    <object type="SNIPPET" id="z162">
+        <attribute name="name" type="string">Merging two folders</attribute>
+        <attribute name="modified" type="date">442151951.23585098981857299805</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z161"></relationship>
         <relationship name="tags" type="0/0" destination="TAG" idrefs="z107"></relationship>
     </object>
 </database>
