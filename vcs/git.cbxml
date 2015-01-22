@@ -5,12 +5,12 @@
     <databaseInfo>
         <version>134481920</version>
         <UUID>107B771E-FDD4-4482-9E91-13FB05DFD074</UUID>
-        <nextObjectID>105</nextObjectID>
+        <nextObjectID>111</nextObjectID>
         <metadata>
             <plist version="1.0">
                 <dict>
                     <key>NSPersistenceFrameworkVersion</key>
-                    <integer>481</integer>
+                    <integer>526</integer>
                     <key>NSStoreModelVersionHashes</key>
                     <dict>
                         <key>Asset</key>
@@ -73,6 +73,44 @@ CgoKQmV0d2VlbiBjb21taXRzIHNpbmNlIGhlYWQ6CgpnaXQgZGlmZiAtLW5hbWUtb25seSBIRUFEfjEw
     </object>
     <object type="TAG" id="z105">
         <attribute name="name" type="string">changesets</attribute>
-        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z102"></relationship>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z102 z107"></relationship>
+    </object>
+    <object type="ASSET" id="z106">
+        <attribute name="sort" type="int32">-1</attribute>
+        <attribute name="path" type="string">Asset.txt</attribute>
+        <attribute name="content" type="binary">Z2l0IGRpZmYgLS1uYW1lLXN0YXR1cyBtYXN0ZXIuLmJyYW5jaE5hbWU=
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z107"></relationship>
+    </object>
+    <object type="SNIPPET" id="z107">
+        <attribute name="name" type="string">Files changed between branches</attribute>
+        <attribute name="modified" type="date">437066388.52693700790405273438</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z106"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z105"></relationship>
+    </object>
+    <object type="ASSET" id="z108">
+        <attribute name="sort" type="int32">-1</attribute>
+        <attribute name="path" type="string">Asset.txt</attribute>
+        <attribute name="content" type="binary">Z2l0IHJlc2V0IC0tc29mdCBIRUFEfjE=
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z109"></relationship>
+    </object>
+    <object type="SNIPPET" id="z109">
+        <attribute name="name" type="string">Undo the last commit</attribute>
+        <attribute name="modified" type="date">438265083.67929297685623168945</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z108"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z111"></relationship>
+    </object>
+    <object type="TAG" id="z110">
+        <attribute name="name" type="string">rollback</attribute>
+        <relationship name="snippets" type="0/0" destination="SNIPPET"></relationship>
+    </object>
+    <object type="TAG" id="z111">
+        <attribute name="name" type="string">commits</attribute>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z109"></relationship>
     </object>
 </database>
