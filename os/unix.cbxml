@@ -5,7 +5,7 @@
     <databaseInfo>
         <version>134481920</version>
         <UUID>93E6B8C1-6F0F-4243-96DA-0D5BD0738764</UUID>
-        <nextObjectID>162</nextObjectID>
+        <nextObjectID>167</nextObjectID>
         <metadata>
             <plist version="1.0">
                 <dict>
@@ -85,7 +85,7 @@ Ym90aCBkZWZhdWx0IHRvIHNjcmVlbiwgYnV0IGNhbiBiZSBkaXJlY3RlZCB0byBmaWxlcyBvciB0cmFz
     </object>
     <object type="TAG" id="z107">
         <attribute name="name" type="string">bash</attribute>
-        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z145 z151 z160 z155 z141 z110 z149 z112 z138 z143 z146 z135 z137 z108 z158 z162"></relationship>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z149 z137 z164 z135 z141 z112 z162 z108 z155 z158 z143 z145 z110 z146 z138 z160 z151"></relationship>
     </object>
     <object type="SNIPPET" id="z108">
         <attribute name="name" type="string">Redirecting outputs</attribute>
@@ -506,5 +506,40 @@ ZXMgYWxsIGxpbmVzIHdoaWNoIGNvbnRhaW4gdGhlIHN1YnN0cmluZyAnc2VjcmV0cGF0aCcgZnJvbSBm
         <relationship name="list" type="1/1" destination="LIST"></relationship>
         <relationship name="assets" type="0/0" destination="ASSET" idrefs="z161"></relationship>
         <relationship name="tags" type="0/0" destination="TAG" idrefs="z107"></relationship>
+    </object>
+    <object type="ASSET" id="z163">
+        <attribute name="sort" type="int32">-1</attribute>
+        <attribute name="path" type="string">Asset.txt</attribute>
+        <attribute name="content" type="binary">VG8gY2hlY2sgdGhlIGN1cnJlbnQgcnVsZXM6CgoJaXB0YWJsZXMgLUwKClNlcnZlciBtYXkgYmUg
+c2V0IHVwIHRvIHJlYnVpbGQgZmlyZXdhbGwgcnVsZXMgb24gYnVpbGQuIElmIHNvLCBmaW5kIHRoZSBydWxlIGRlZmluaXRpb24gZmlsZSAtIG1heSBiZSBpbiAvZXRjL2lwdGFibGVzLCBtYXkgYmUgY2FsbGVkIHNvbWV0aGluZyBsaWtlIHJ1bGVzLnY0LiBFZGl0IHRvIGNoYW5nZSB0aGUgcnVsZXMKCmUuZy4gYWRkIGEgbmV3IGxpbmUKCgktQSBJTlBVVCAtcCB0Y3AgLW0gbXVsdGlwb3J0IC0tcG9ydHMgOTAwMCw2MTYxNyAtbSBjb21tZW50IC0tY29tbWVudCAiMDgwIGFsbG93IHN0dWIiIC1qIEFDQ0VQVAoKTm90ZSB0aGF0IHRoZSBsaW5lcyBhcmUgcHJvY2Vzc2VkIHNlcXVlbnRpYWxseSwgc28gYSBEUk9QIGFsbCBydWxlIHdpbGwgb3ZlcnJpZGUgc3Vic2VxdWVudCBydWxlcy4KCk9uY2UgdGhlIGZpbGUgaXMgZWRpdGVkICYgc2F2ZWQsIHVwZGF0ZSB0aGUgY3VycmVudCBjb25maWc6CgoJaXB0YWJsZXMtcmVzdG9yZSA8IC4vcnVsZXMudjQK
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z164"></relationship>
+    </object>
+    <object type="SNIPPET" id="z164">
+        <attribute name="name" type="string">Updating firewall rules</attribute>
+        <attribute name="modified" type="date">448803465.84194397926330566406</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z163"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z107"></relationship>
+    </object>
+    <object type="ASSET" id="z165">
+        <attribute name="sort" type="int32">-1</attribute>
+        <attribute name="path" type="string">Asset.txt</attribute>
+        <attribute name="content" type="binary">bXZuIGRlcGVuZGVuY3k6dHJlZQ==
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z166"></relationship>
+    </object>
+    <object type="SNIPPET" id="z166">
+        <attribute name="name" type="string">Dependency tree</attribute>
+        <attribute name="modified" type="date">449052006.51032298803329467773</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z165"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z167"></relationship>
+    </object>
+    <object type="TAG" id="z167">
+        <attribute name="name" type="string">maven</attribute>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z166"></relationship>
     </object>
 </database>
