@@ -5,12 +5,12 @@
     <databaseInfo>
         <version>134481920</version>
         <UUID>93E6B8C1-6F0F-4243-96DA-0D5BD0738764</UUID>
-        <nextObjectID>167</nextObjectID>
+        <nextObjectID>169</nextObjectID>
         <metadata>
             <plist version="1.0">
                 <dict>
                     <key>NSPersistenceFrameworkVersion</key>
-                    <integer>526</integer>
+                    <integer>641</integer>
                     <key>NSStoreModelVersionHashes</key>
                     <dict>
                         <key>Asset</key>
@@ -85,7 +85,7 @@ Ym90aCBkZWZhdWx0IHRvIHNjcmVlbiwgYnV0IGNhbiBiZSBkaXJlY3RlZCB0byBmaWxlcyBvciB0cmFz
     </object>
     <object type="TAG" id="z107">
         <attribute name="name" type="string">bash</attribute>
-        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z149 z137 z164 z135 z141 z112 z162 z108 z155 z158 z143 z145 z110 z146 z138 z160 z151"></relationship>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z112 z155 z149 z164 z162 z158 z145 z141 z146 z160 z151 z169 z143 z137 z108 z135 z110 z138"></relationship>
     </object>
     <object type="SNIPPET" id="z108">
         <attribute name="name" type="string">Redirecting outputs</attribute>
@@ -541,5 +541,21 @@ c2V0IHVwIHRvIHJlYnVpbGQgZmlyZXdhbGwgcnVsZXMgb24gYnVpbGQuIElmIHNvLCBmaW5kIHRoZSBy
     <object type="TAG" id="z167">
         <attribute name="name" type="string">maven</attribute>
         <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z166"></relationship>
+    </object>
+    <object type="ASSET" id="z168">
+        <attribute name="sort" type="int32">-1</attribute>
+        <attribute name="path" type="string">Asset.txt</attribute>
+        <attribute name="content" type="binary">Zm9yIGYgaW4gKi5vZ2c7IGRvIGF2Y29udiAtaSAiJGYiIC1jOmEgbGlibXAzbGFtZSAtcTphIDIg
+IiR7Zi9vZ2cvbXAzfSI7IGRvbmUKCldpbGwgbmVlZCBsaWJhdiAtPiBicmV3IGluc3RhbGwgbGliYXY=
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z169"></relationship>
+    </object>
+    <object type="SNIPPET" id="z169">
+        <attribute name="name" type="string">Convert a folder of OGGs to MP3s</attribute>
+        <attribute name="modified" type="date">502110650.51210397481918334961</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z168"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z107"></relationship>
     </object>
 </database>
