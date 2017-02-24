@@ -5,7 +5,7 @@
     <databaseInfo>
         <version>134481920</version>
         <UUID>93E6B8C1-6F0F-4243-96DA-0D5BD0738764</UUID>
-        <nextObjectID>169</nextObjectID>
+        <nextObjectID>171</nextObjectID>
         <metadata>
             <plist version="1.0">
                 <dict>
@@ -73,7 +73,7 @@ cnQgb2YgbGluZSwgJCBmb3IgZW5kIG9mIGxpbmUKdyBmb3J3YXJkIGEgd29yZCwgYiBmb3IgYmFjayBv
     </object>
     <object type="TAG" id="z105">
         <attribute name="name" type="string">vi</attribute>
-        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z133 z127 z121 z128 z130 z124 z122 z119 z103"></relationship>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z133 z171 z127 z122 z128 z130 z121 z124 z119 z103"></relationship>
     </object>
     <object type="ASSET" id="z106">
         <attribute name="sort" type="int32">-1</attribute>
@@ -557,5 +557,21 @@ IiR7Zi9vZ2cvbXAzfSI7IGRvbmUKCldpbGwgbmVlZCBsaWJhdiAtPiBicmV3IGluc3RhbGwgbGliYXY=
         <relationship name="list" type="1/1" destination="LIST"></relationship>
         <relationship name="assets" type="0/0" destination="ASSET" idrefs="z168"></relationship>
         <relationship name="tags" type="0/0" destination="TAG" idrefs="z107"></relationship>
+    </object>
+    <object type="ASSET" id="z170">
+        <attribute name="content" type="binary">VG8gc3dpdGNoIG9mZiBzeW50YXggaGlnaGxpZ2h0aW5nCgoJOnNldCBzeW49b2ZmCgpVc2VmdWwg
+aW5mbzogaHR0cHM6Ly93d3cuc2JmNS5jb20vfmNkdWFuL3RlY2huaWNhbC92aS92aS00LnNodG1s
+</attribute>
+        <attribute name="sort" type="int32">-1</attribute>
+        <attribute name="path" type="string">Asset.txt</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z171"></relationship>
+    </object>
+    <object type="SNIPPET" id="z171">
+        <attribute name="name" type="string">Syntax highlighting</attribute>
+        <attribute name="modified" type="date">509624089.61597299575805664062</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z170"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z105"></relationship>
     </object>
 </database>
